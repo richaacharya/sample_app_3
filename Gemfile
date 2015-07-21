@@ -5,7 +5,10 @@ gem 'rails', '3.2.21'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+group :production do
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 
 # Gems used only for assets and not required
